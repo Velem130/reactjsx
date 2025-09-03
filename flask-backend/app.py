@@ -5,14 +5,14 @@ import psycopg2
 app = Flask(__name__)
 CORS(app)
 
-# 🔗 PostgreSQL connection setup (Update with your details!)
+# 🔗 PostgreSQL connection setup 
 DB_NAME = "contacts"
 DB_USER = "postgres"
 DB_PASSWORD = "issahmz9"
 DB_HOST = "localhost"
-DB_PORT = "5432"  # default PostgreSQL port
+DB_PORT = "5432"  
 
-# Connect to PostgreSQL
+#  PostgreSQL
 def get_connection():
     return psycopg2.connect(
         dbname=DB_NAME,
@@ -36,7 +36,7 @@ def contact():
         conn = get_connection()
         cur = conn.cursor()
 
-        # INSERT into a table called "contact_messages"
+        # INSERT into my table velem
         cur.execute(
             "INSERT INTO contacts (name, email, message) VALUES (%s, %s, %s)",
             (name, email, message)
