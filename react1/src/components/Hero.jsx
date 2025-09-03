@@ -12,10 +12,10 @@ const Hero = () => {
             Build Better Web Experiences
           </h1>
           <p className="text-lg text-gray-600 mb-6">
-            Empower your users with responsive, fast, and modern design. Start your journey with us today.
+            we empower our users with responsive, fast, and modern design. Start your journey with us today.
           </p>
           <a
-            href="https://wa.me/27840489731"  // Your WhatsApp number
+            href="https://wa.me/27840489731"  
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
           >
             Get Started
